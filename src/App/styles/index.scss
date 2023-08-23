@@ -6,31 +6,4 @@
   font-size: var(--font-m);
   font-weight: var(--font-weight-b);
   line-height: 1.5;
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-@media only screen and (max-width: 768px) {
-  .app {
-    font-size: 14px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .app {
-    font-size: 13px;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .app {
-    font-size: 10px;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .app {
-    overflow-x: hidden;
-  }
 }
