@@ -1,9 +1,4 @@
-@import './global.scss';
 @import './reset.scss';
-
 .app {
-  font-family: var(--font-family-main);
-  font-size: var(--font-m);
-  font-weight: var(--font-weight-b);
-  line-height: 1.5;
+  font-size: 16px;
 }

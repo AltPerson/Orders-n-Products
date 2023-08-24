@@ -53,6 +53,7 @@ module.exports = (_, argv) => {
               loader: 'css-loader',
               options: {
                 modules: {
+                  auto: (resPath) => Boolean(resPath.includes('.module.')),
                   localIdentName: '[path][name]__[local]--[hash:base64:5]',
                 },
                 importLoaders: 1,

@@ -1,0 +1,29 @@
+.product {
+  background-color: white;
+  border: 1px solid #dbe0e5;
+  border-radius: 5px;
+  &-image {
+    width: 70px;
+    height: 70px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &-title {
+    span:nth-child(1) {
+      font-size: 1.3em;
+      border-bottom: 1px solid #dbe0e5;
+    }
+    span:nth-child(2) {
+      color: #0c4669;
+    }
+    span:nth-child(3) {
+      color: #73a2c0;
+    }
+  }
+  &-order {
+    cursor: pointer;
+  }
+}
