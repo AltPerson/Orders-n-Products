@@ -3,6 +3,7 @@ Project name:Orders-n-Products
 Description:Orders-n-Products is a website that allows users to view orders and products.
 
 Used technologies:
+<br>
 Library:React(TS),React-Router-Dom,i18n,Socket.io
 StateManager:Redux Toolkit
 CSS-Framework:Bootstrap(SCSS)
