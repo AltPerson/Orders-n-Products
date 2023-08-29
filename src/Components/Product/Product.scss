@@ -27,3 +27,10 @@
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 1190px) {
+  .product {
+    flex-direction: column;
+    text-align: center;
+  }
+}

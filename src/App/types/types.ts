@@ -3,13 +3,13 @@ interface TQuarantee {
   end: string;
 }
 
-interface TPrice {
+export interface TPrice {
   value: number;
   symbol: string;
   isDefault: boolean;
 }
 
-export interface Product {
+export interface IProduct {
   id: number;
   serialNumber: number;
   isNew: boolean;
@@ -23,10 +23,41 @@ export interface Product {
   date: string;
 }
 
-export interface IOrders {
+export interface IMultiProducts {
+  ua: IProduct[];
+  en: IProduct[];
+}
+
+export interface IOrder {
   id: number;
   title: string;
   date: string;
   description: string;
-  products: Product[];
+  products: IProduct[];
+}
+
+export interface IMultiOrders {
+  ua: IOrder[];
+  en: IOrder[];
+}
+
+export interface IToogle {
+  show: boolean;
+  toogleShow: () => void;
+}
+
+export interface IOpenStates {
+  id: number;
+  isOpen: boolean;
+}
+
+interface IMultiData {
+  ua: string;
+  en: string;
+}
+
+export interface ITimeFormats {
+  date: IMultiData;
+  shortFormat: string;
+  longFormat: string;
 }

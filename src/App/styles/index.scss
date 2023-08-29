@@ -1,4 +1,23 @@
 @import './reset.scss';
 .app {
   font-size: 16px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px) {
+  .app {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .app {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .app {
+    font-size: 10px;
+  }
 }

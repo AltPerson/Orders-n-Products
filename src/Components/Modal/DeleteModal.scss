@@ -1,0 +1,71 @@
+.delmodal {
+  position: fixed;
+  z-index: 1300;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(120, 120, 120, 0.5);
+  strong {
+    font-weight: 800;
+  }
+  .wrapper {
+    position: relative;
+    background: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(139, 139, 139);
+    width: 80%;
+    &-title {
+      font-size: 2em;
+    }
+    &-info {
+      font-size: 1.5em;
+    }
+    &-close {
+      cursor: pointer;
+      position: absolute;
+      top: -20px;
+      right: -15px;
+      background: white;
+      padding: 5px 10px;
+      border-radius: 50%;
+      border: 1px solid rgb(139, 139, 139);
+      color: rgb(139, 139, 139);
+      transition: all 0.4s ease-out;
+      &:hover {
+        color: black;
+        border: 1px solid black;
+      }
+    }
+    &-actions {
+      text-align: center;
+      margin: 10px 0;
+      button {
+        width: 20%;
+        outline: none;
+        padding: 10px 0;
+        border-radius: 15px;
+        border: none;
+        background: transparent;
+        transition: all 0.4s ease-out;
+        font-size: 1.4em;
+        &:first-child {
+          margin-right: 30px;
+        }
+        &:first-child:hover {
+          background: rgb(250, 65, 65);
+          color: white;
+        }
+        &:nth-child(2):hover {
+          background: green;
+          color: white;
+        }
+      }
+    }
+  }
+}

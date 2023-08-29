@@ -1,29 +1,34 @@
 import './Products.scss';
 import { FC, useState, ChangeEvent } from 'react';
-import { products } from 'Data/data';
 import Product from 'Components/Product/Product';
+import { useProducts } from 'Utils/Hooks/useProducts';
+import { useTranslation } from 'react-i18next';
 
 const Products: FC = () => {
   const [type, setType] = useState('All');
+  const { products } = useProducts();
+  const { t, i18n } = useTranslation('translation');
   const inputHandler = (e: ChangeEvent<HTMLSelectElement>) => {
     setType(e.currentTarget.value);
   };
   return (
-    <div className="products text-left p-5">
+    <section className="products text-left p-5">
       <div className="products-header header d-flex align-items-center">
-        <h1 className="header-title">{`Товари / ${products.length}`}</h1>
+        <h1 className="header-title">{`${t('products')} / ${
+          products[i18n.language].length
+        }`}</h1>
         <div className="header-select">
-          <label htmlFor="spec">Тип:</label>
+          <label htmlFor="spec">{t('type')}:</label>
           <select id="spec" onChange={inputHandler}>
-            <option value="All">Всі</option>
-            <option value="Monitors">Монітори</option>
-            <option value="Keyboards">Клавіатури</option>
-            <option value="Mouses">Миши</option>
+            <option value="All">{t('all')}</option>
+            <option value="Monitors">{t('monitors')}</option>
+            <option value="Keyboards">{t('keyboards')}</option>
+            <option value="Mouses">{t('mouses')}</option>
           </select>
         </div>
       </div>
       <div className="products-list d-flex flex-column gap-2">
-        {products
+        {products[i18n.language]
           .filter((product) => {
             if (type === 'All') return true;
             return product.type === type;
@@ -32,7 +37,7 @@ const Products: FC = () => {
             <Product key={`product-${product.id}`} {...product} />
           ))}
       </div>
-    </div>
+    </section>
   );
 };
 export default Products;

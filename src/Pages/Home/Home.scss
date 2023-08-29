@@ -1,2 +1,42 @@
 .home {
+  min-height: calc(100vh - 113px);
+  background-color: #eff2f4;
+  box-shadow: inset 0 10px 20px #dbe0e5;
+  strong {
+    font-weight: 800;
+  }
+  &-header {
+    &__title {
+      font-size: 3.5em;
+    }
+  }
+  &-today {
+    font-size: 2.5em;
+  }
+  &-info {
+    font-size: 1.5em;
+  }
+  &-links {
+    margin-top: 30px;
+    &__orders,
+    &__products {
+      text-align: center;
+      min-width: 200px;
+      padding: 10px;
+      border: 1px solid grey;
+      border-radius: 15px;
+      background-color: #c4f7ac;
+      cursor: pointer;
+      transition: all 0.4s ease-in;
+      &:hover {
+        background-color: #dbe0e5;
+      }
+    }
+    &__orders a,
+    &__products a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.3em;
+    }
+  }
 }

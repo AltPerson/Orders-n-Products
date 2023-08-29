@@ -1,0 +1,90 @@
+.order {
+  background-color: white;
+  border: 1px solid #dbe0e5;
+  border-radius: 5px;
+  position: relative;
+  &-title {
+    span:nth-child(1) {
+      font-size: 1.3em;
+      border-bottom: 1px solid #dbe0e5;
+    }
+    span:nth-child(2) {
+      color: #0c4669;
+    }
+  }
+  &-quantity {
+    &__burger {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      &_clicked {
+        background-color: #dbe0e5;
+        border-radius: 50%;
+        padding: 5px;
+      }
+    }
+  }
+  &-productsprev {
+    text-align: center;
+    position: absolute;
+    z-index: 5;
+    left: 43%;
+    width: 54%;
+    max-height: 510px;
+    overflow: auto;
+    border: 1px solid grey;
+    h1 {
+      font-size: 1.2em;
+      background-color: white;
+    }
+  }
+  &-delete {
+    width: 50px;
+    height: 50px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  .order {
+    &-productsprev {
+      width: 30%;
+      left: 55%;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .order {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    &-productsprev {
+      width: 30%;
+      left: 66%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .order {
+    &-productsprev {
+      width: 40%;
+      left: 55%;
+      div {
+        align-items: center;
+      }
+    }
+  }
+}

@@ -9,11 +9,12 @@
       img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
       }
     }
   }
   &-search {
+    margin: 0px 10px;
     input {
       width: 100%;
       outline: none;
@@ -32,6 +33,9 @@
       &-number {
         &__full {
           margin-right: 5px;
+          span {
+            white-space: nowrap;
+          }
         }
         &__time {
           img {
@@ -45,13 +49,34 @@
     }
     &__visiters {
       margin-left: 10px;
-      margin-top: 14px;
       img {
         width: 20px;
         height: 20px;
         object-fit: cover;
         margin-right: 5px;
       }
+    }
+    &__language {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 572px) {
+  .tmenu {
+    &-container {
+      flex-direction: column;
+      row-gap: 10px;
+      justify-content: center;
+      text-align: center;
+    }
+    &-search {
+      input {
+        text-align: center;
+      }
+    }
+    &-info {
+      flex-direction: column;
     }
   }
 }

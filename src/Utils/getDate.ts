@@ -1,6 +1,6 @@
-export function getDate(manualDate?: string): string {
+export function getDate(manualDate?: string, eng?: boolean): string {
   const date = new Date(manualDate ? manualDate : new Date()).toLocaleString(
-    'uk-UA',
+    eng ? 'en-GB' : 'ua-UK',
     {
       day: '2-digit',
       month: 'short',
