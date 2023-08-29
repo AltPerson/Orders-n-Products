@@ -19,7 +19,7 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    const connection = connect('https://visiters.glitch.me/');
+    const connection = connect('http://localhost:3001');
     setSocket(connection);
     return () => {
       connection.close();
