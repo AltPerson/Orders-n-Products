@@ -15,7 +15,7 @@ const Order: FC<IOrder> = (props) => {
 
   const { showState, toggleShowProducts } = useShowProducts();
   const { toogleDeleteModal } = useDeleteModal();
-  const { t } = useTranslation('translation');
+  const { t, i18n } = useTranslation('translation');
   return (
     <>
       <div className="order d-flex justify-content-between align-items-center p-3">
@@ -43,7 +43,8 @@ const Order: FC<IOrder> = (props) => {
         </div>
         <div className="order-date">
           <span>
-            {getDate(date)} \ {date}
+            {i18n.language === 'ua' ? getDate(date) : getDate(date, true)} \{' '}
+            {date}
           </span>
         </div>
         <div className="order-sum d-flex flex-column flex-wrap">
