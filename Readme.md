@@ -1,3 +1,4 @@
+# ENG
 Project name:Orders-n-Products
 
 Description:Orders-n-Products is a website that allows users to view orders and products.
@@ -86,6 +87,9 @@ Start both client and server:npm run dev
 
 
 ---
+
+# UA
+
 
 Назва проєкту:Orders-n-Products
 
