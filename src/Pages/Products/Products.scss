@@ -21,11 +21,18 @@
   }
   &-list {
     margin-top: 40px;
-    max-height: 85%;
+    height: 83%;
     overflow-y: auto;
   }
 }
 
+@media screen and (max-width: 1366px) {
+  .products {
+    &-list {
+      height: 74%;
+    }
+  }
+}
 @media screen and (max-width: 1162px) {
   .products {
     &-header {

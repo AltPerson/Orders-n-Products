@@ -1,6 +1,7 @@
 .tmenu {
   border-bottom: 1px solid #dbe0e5;
   box-shadow: 0 10px 20px #dbe0e5;
+
   &-logo {
     &__image {
       width: 80px;
@@ -15,6 +16,8 @@
   }
   &-search {
     margin: 0px 10px;
+    max-width: 50%;
+    width: 100%;
     input {
       width: 100%;
       outline: none;

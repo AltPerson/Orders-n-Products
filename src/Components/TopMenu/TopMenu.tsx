@@ -42,7 +42,7 @@ const TopMenu: FC<IProps> = ({ socket }) => {
             <span>Orders & Products</span>
           </div>
         </div>
-        <div className="tmenu-search col-md-6 col-sm-3">
+        <div className="tmenu-search ">
           <input type="text" aria-label="search" placeholder={t('search')} />
         </div>
         <div className="tmenu-info d-flex">

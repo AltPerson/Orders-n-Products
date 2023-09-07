@@ -1,5 +1,5 @@
 .nmenu {
-  min-height: calc(100vh - 113px);
+  height: calc(100vh - 113px);
   padding: 80px;
   border-right: 1px solid #dbe0e5;
   box-shadow: 15px 0px 20px #dbe0e5;
@@ -67,7 +67,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nmenu {
     display: none !important;
     min-height: 100%;
