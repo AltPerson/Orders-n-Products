@@ -3,7 +3,7 @@
 <h2>About the project</h2>
 
 <p>Orders & Products is a simple website which was maded as test-task.<br>
-It has simple functional and design. It allow user to view products in his order, delete his orders on Orders page, and also view, filter products on Products page.<br>
+It has simple functional and design.It allow user to view products in his order, delete his orders on Orders page, and also view, filter products on Products page.<br>
 Website has visiters counter and language switcher.
 </p>
 
