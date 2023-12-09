@@ -18,7 +18,7 @@ Website has visiters counter and language switcher.
 » Bootstrap(SCSS) <br>
 
 
-<h2>Screenshots of the Project 📸</h2>![orders-n-products netlify app_](https://github.com/AltPerson/Orders-n-Products/assets/39427362/5087f001-bfb0-4f9a-823c-45722c984cf7)
+<h2>Screenshots of the Project 📸</h2>
 
 <br>
 <h3 align='center'>Home Page 🏡</h3>
